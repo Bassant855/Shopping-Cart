@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sopping Cart | Home</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/createProduct.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <!--  -->
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="brand">Shopping Cart</a>
+                <nav>
+                    <ul id="links">
+                        <li><a href="login.html">Sign In</a></li>
+                        <li><a href="register.html">Sign Up</a></li>
+                    </ul>
+                    <ul id="userInfo">
+                        <li><a href="#" id="user"></a></li>
+                       <a href="favorite.html"> <i class="fa-solid fa-heart" id="heart"></i></a>
+                        <li class="shoppingCart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="badge"></span>
+
+                            <div class="carts-products">
+                                <div></div>
+                                <a href="cartproducts.html">View All Products</a>
+                            </div>
+
+                        </li>
+                        <li><a href="#" id="logout">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="create-product-page">
+        <div class="container">
+            <form>
+                <input type="text" placeholder="name..." id="productName"/>
+                <input type="text" placeholder="description.." id="productDisc"/>
+                <select id="productSize">    
+                    
+                    <option hidden>Select Option</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <input type="submit" value="Create" id="create"/>
+            </form>
+
+            <div id="products">
+
+            </div>
+        </div>
+      
+    </section>
+    
+    <script src="js/User.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/createProduct.js"></script>
+   
+</body>
+</html>

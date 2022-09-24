@@ -1,0 +1,26 @@
+.create-product-page form {
+    margin: 10px 0;
+}
+.create-product-page form input,
+.create-product-page form select {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    display: block;
+    font-size: 17px;
+    border-radius: 6px;
+    font-family: 'Oswald', sans-serif;
+}
+.create-product-page form input:focus {
+    outline: none;
+    border-color: #5a79a0;
+}
+.create-product-page form input[type="submit"] {
+    background-color: #0F3460;
+    color: #fff;
+    cursor: pointer;
+    padding: 3px;
+    font-size: 20px;
+}
